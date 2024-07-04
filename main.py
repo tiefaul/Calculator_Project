@@ -11,9 +11,15 @@ display.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
 # Define button click functionality
 def button_click(number):
+    current = display.get() # Grabs the current display
+    display.delete(0, tk.END)  
+    display.insert(0, current + str(number))
+
+# Back space function
+def button_back():
     current = display.get()
     display.delete(0, tk.END)
-    display.insert(0, current + str(number))
+    display.insert(0, current[:-1])
 
 # Define how to clear the display
 def button_clear():
@@ -46,6 +52,7 @@ button_add = tk.Button(root, text="+", padx=30, pady=20, command=lambda: button_
 button_subtract = tk.Button(root, text="-", padx=30, pady=20, command=lambda: button_click("-"))
 button_delete = tk.Button(root, text="C", padx=30, pady=20, command=button_clear)
 button_total = tk.Button(root, text="=", padx=30, pady=20, command=button_equal)
+button_back = tk.Button(root, text="back", width=1, padx=30, pady=20, command=button_back)
 
 # Place buttons on the grid
 
@@ -71,5 +78,7 @@ button_0.grid(row=4, column=1)
 button_delete.grid(row=4, column=0)
 button_period.grid(row=4, column=2)
 button_total.grid(row=4, column=3)
+
+button_back.grid(row=5, column=0)
 
 root.mainloop()
