@@ -16,6 +16,16 @@ textbox.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 root.tk.call("source", "azure.tcl")
 root.tk.call("set_theme", "dark")
 
+# Change theme button
+def change_theme():
+    # NOTE: The theme's real name is azure-<mode>
+    if root.tk.call("ttk::style", "theme", "use") == "azure-dark":
+        # Set light theme
+        root.tk.call("set_theme", "light")
+    else:
+        # Set dark theme
+        root.tk.call("set_theme", "dark")
+
 # Define button click functionality
 def button_click(number):
     current = textbox.get() # Grabs the current display
@@ -60,6 +70,7 @@ button_subtract = ttk.Button(root, text="-", command=lambda: button_click("-"))
 button_delete = ttk.Button(root, text="C", command=button_clear)
 button_total = ttk.Button(root, text="=", command=button_equal)
 button_back = ttk.Button(root, text="back", width=1, command=button_back)
+button_theme= ttk.Button(root, text="Theme", width=1, command=change_theme)
 
 # Place buttons on the grid
 
@@ -87,5 +98,5 @@ button_period.grid(row=4, padx = 3, pady=3, column=2)
 button_total.grid(row=4, padx = 3, pady=3, column=3)
 
 button_back.grid(row=5, ipadx=32, pady=3, column=0)
-
+button_theme.grid(row=0,column=5, ipadx=20)
 root.mainloop()
