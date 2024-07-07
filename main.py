@@ -67,7 +67,7 @@ button_add = ttk.Button(root, text="+", command=lambda: button_click("+"))
 button_subtract = ttk.Button(root, text="-", command=lambda: button_click("-"))
 button_delete = ttk.Button(root, text="C", command=button_clear)
 button_total = ttk.Button(root, text="=", command=button_equal)
-button_back = ttk.Button(root, text="back", width=1, command=button_back)
+button_remove = ttk.Button(root, text="back", width=1, command=button_back)
 button_theme= ttk.Button(root, text="Theme", width=1, command=change_theme)
 
 # Place buttons on the grid
@@ -95,7 +95,7 @@ button_delete.grid(row=4, padx=3, pady=3, column=0)
 button_period.grid(row=4, padx=3, pady=3, column=2)
 button_total.grid(row=4, padx=3, pady=3, column=3)
 
-button_back.grid(row=5, ipadx=32, pady=3, column=0)
+button_remove.grid(row=5, ipadx=32, pady=3, column=0)
 button_theme.grid(row=0,column=5, ipadx=20)
 
 root.mainloop()
