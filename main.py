@@ -1,3 +1,5 @@
+#!Python3
+
 import tkinter as tk
 from tkinter import ttk
 
@@ -64,6 +66,7 @@ button_0 = ttk.Button(root, text="0", command=lambda: button_click(0))
 button_multiply = ttk.Button(root, text="*", command=lambda: button_click("*"))
 button_period = ttk.Button(root, text=".", command=lambda: button_click("."))
 button_add = ttk.Button(root, text="+", command=lambda: button_click("+"))
+button_divide = ttk.Button(root, text="/", command=lambda: button_click("/"))
 button_subtract = ttk.Button(root, text="-", command=lambda: button_click("-"))
 button_delete = ttk.Button(root, text="C", command=button_clear)
 button_total = ttk.Button(root, text="=", command=button_equal)
@@ -96,6 +99,7 @@ button_period.grid(row=4, padx=3, pady=3, column=2)
 button_total.grid(row=4, padx=3, pady=3, column=3)
 
 button_remove.grid(row=5, ipadx=32, pady=3, column=0)
+button_divide.grid(row=5, pady=3, column=3)
 button_theme.grid(row=0,column=5, ipadx=20)
 
 root.mainloop()
