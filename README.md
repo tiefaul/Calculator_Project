@@ -19,3 +19,5 @@ Additionally, you need to have the Tkinter library installed. Tkinter usually co
 
 ```bash
 pip install tk
+```
+**_NOTE:_**  For the themes to work you need to add: '*azure.tcl*' and the '*theme*' folder
