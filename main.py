@@ -13,7 +13,7 @@ textbox = ttk.Entry(root, width=45) # entry widget is used to create a single-li
 textbox.grid(row=0, column=0, columnspan=4, padx=10, pady=10, sticky="nsew")
 
 # Theme
-root.tk.call("source", "azure.tcl")
+root.tk.call("source", "azure.tcl") # Change "azure.tcl" to "Calculator_Project/azure.tcl" if you have more than one folder opened in VSCode
 root.tk.call("set_theme", "dark")
 
 # Change theme button
