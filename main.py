@@ -6,7 +6,7 @@ from tkinter import ttk
 # Main application window
 root = tk.Tk() # initializes the main window
 root.title("Tyler's Calculator")
-# root.resizable(False, False)
+# root.resizable(False, False) # NOTE: Comment out if you don't want the window to be resizable
 
 # Create display widget
 textbox = ttk.Entry(root, width=45) # entry widget is used to create a single-line text box
