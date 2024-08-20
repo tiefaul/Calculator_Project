@@ -96,10 +96,10 @@ button_multiply.grid(row=1, padx=3, pady=3, column=3, sticky="nsew")
 button_0.grid(row=4,padx=3, pady=3, column=1, sticky="nsew")
 button_delete.grid(row=4, padx=3, pady=3, column=0, sticky="nsew")
 button_period.grid(row=4, padx=3, pady=3, column=2, sticky="nsew")
-button_total.grid(row=4, padx=3, pady=3, column=3, sticky="nsew")
+button_total.grid(row=5, padx=3, pady=3, column=3, sticky="nsew")
 
 button_remove.grid(row=5, ipadx=32, pady=3, column=0, sticky="nsew")
-button_divide.grid(row=5, pady=3, column=3, sticky="nsew")
+button_divide.grid(row=4, padx=3, pady=3, column=3, sticky="nsew")
 button_theme.grid(row=0,column=5, ipadx=20, sticky="nsew")
 
 root.mainloop()
