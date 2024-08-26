@@ -8,7 +8,7 @@ This project is a simple calculator application built using Python 3 and the Tki
 
 - **Addition**
 - **Subtraction**
-- **Multiplication** 
+- **Multiplication**
 - **Division**
 
 ## Prerequisites
@@ -20,5 +20,6 @@ Additionally, you need to have the Tkinter library installed. Tkinter usually co
 ```bash
 pip install tk
 ```
+
 **_NOTE:_**  
-> For the themes to work you need to add: '*azure.tcl*' and the '*theme*' folder
+> For the themes to work you need to add: 'azure.tcl' and the 'theme' folder
